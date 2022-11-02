@@ -10,12 +10,5 @@ services:
       - MONGO_INITDB_ROOT_USERNAME=root
       - MONGO_INITDB_ROOT_PASSWORD=password
       - MONGO_INITDB_DATABASE=tour-of-heroes
-    networks:
-      - heroes-network
     volumes:
       - ./migration/mongo.sh:/docker-entrypoint-initdb.d/init-mongo.sh:ro
-
-networks:
-  default:
-    external:
-      name: heroes-network

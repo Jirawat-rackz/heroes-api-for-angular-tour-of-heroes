@@ -22,7 +22,7 @@ func main() {
 	}
 
 	// Connect Mongo with Credential and URI
-	client, err := mongo.Connect(ctx, options.Client().ApplyURI("mongodb://mongodb:27017/").SetAuth(credential))
+	client, err := mongo.Connect(ctx, options.Client().ApplyURI("mongodb://localhost:27017/").SetAuth(credential))
 	defer func() {
 		if err = client.Disconnect(ctx); err != nil {
 			panic(err)
