@@ -1,0 +1,6 @@
+projectKey=golang-gin-tour-of-heroes
+serverUrl=http://localhost:9000
+serverVersion=9.7.1.62043
+dashboardUrl=http://localhost:9000/dashboard?id=golang-gin-tour-of-heroes
+ceTaskId=AYQ8s88-sk3NyU6oqdtn
+ceTaskUrl=http://localhost:9000/api/ce/task?id=AYQ8s88-sk3NyU6oqdtn
